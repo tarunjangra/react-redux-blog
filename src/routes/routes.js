@@ -5,6 +5,7 @@ import List from '../components/list';
 import NewPost from '../components/new-post';
 import PostShow from '../components/post-show';
 import Photos from '../components/photos';
+import ToDo from '../components/todo';
 import {onPhotosEnter} from './route_callbacks';
 
 const Greeting = () => {
@@ -17,5 +18,6 @@ export default (
   <Route path="/posts/new" component={NewPost} />
   <Route path="/posts/:id" component={PostShow} />
   <Route path="/photos" component={Photos} onEnter={onPhotosEnter} />
+  <Route path="/todo" component={ToDo} />
 </Route>
 );

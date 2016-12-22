@@ -28,6 +28,7 @@ class List extends Component {
     <div className="btn-group pull-right" role="group">
        <Link to="/posts/new" className="btn btn-default btn-primary">Add post</Link>
        <Link to="/photos" className="btn btn-default">Photos</Link>
+       <Link to="/todo" className="btn btn-default">ToDo List</Link>
     </div>
    
     </div>
