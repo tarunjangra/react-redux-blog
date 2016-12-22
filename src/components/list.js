@@ -15,14 +15,14 @@ class List extends Component {
     return this.props.posts.map((post) => {
       return <li className="list-group-item" key={post.id}>
         <span className="pull-xs-right">{post.categories}</span>
-        <strong><Link to={"/posts/"+post.id}>{post.title}</Link></strong>
+        <strong>{post.id}:<Link to={"/posts/"+post.id}>{post.title}</Link></strong>
       </li>
     });
   }
 
   render() {
     return <div>
-    <div className="text-xs-right">
+    <div className="pull-xs-right">
     <Link to="/posts/new" className="btn btn-primary">Add post</Link>
     </div>
     <h3>Posts:</h3>

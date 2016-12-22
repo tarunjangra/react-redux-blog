@@ -52,7 +52,7 @@ class NewPost extends Component {
     }
 
     render(){
-        const {fields:{title,categories,content},handleSubmit} = this.props;
+        const {handleSubmit} = this.props;
         //const handleSubmit = this.props.handleSubmit;
         // const fields.title = this.props.fields.title
 
