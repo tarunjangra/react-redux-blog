@@ -13,11 +13,9 @@ class Photos extends Component {
     renderPhotos(){
         return this.props.photos.map((photo) => {
             return (
-                <Link key={photo.id} to={`/photos/${photo.id}`}>
-                    <li className="list-group-item">
+                    <li className="list-group-item pull-left">
                         <img src={photo.thumbnailUrl} />
                     </li>
-                </Link>
             );
         });
     }

@@ -42,7 +42,7 @@ export function deletePost(id){
 }
 
 export function fetchPhotos(){
-    const request = axios.get('http://jsonplaceholder.typicode.com/photos');
+    const request = axios.get('http://jsonplaceholder.typicode.com/photos?albumId=1');
     return {
         type: FETCH_PHOTOS,
         payload: request
