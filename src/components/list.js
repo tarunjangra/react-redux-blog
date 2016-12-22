@@ -14,8 +14,9 @@ class List extends Component {
   renderPosts() {
     return this.props.posts.map((post) => {
       return <li className="list-group-item" key={post.id}>
-        <span className="pull-xs-right">{post.categories}</span>
-        <strong><Link to={"/posts/"+post.id}>{post.id}:{post.title}</Link></strong>
+        <Link to={"/posts/"+post.id}><strong>{post.id}:</strong>{post.title}</Link>
+
+        <span className="pull-right">{post.categories}</span>
       </li>
     });
   }
@@ -24,7 +25,7 @@ class List extends Component {
     return <div>
     <div className="pull-xs-right">
 
-    <div class="btn-group pull-right" role="group">
+    <div className="btn-group pull-right" role="group">
        <Link to="/posts/new" className="btn btn-default btn-primary">Add post</Link>
        <Link to="/photos" className="btn btn-default">Photos</Link>
     </div>

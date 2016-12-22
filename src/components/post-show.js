@@ -25,7 +25,7 @@ class PostShow extends Component {
             return <div>Loading...</div>;
         }
         return <div>
-        <Link to="/">Back to index</Link>
+        <Link className="btn btn-primary pull-xs-right" to="/">Back to index</Link>
         <h3>{this.props.post.title}</h3>
         <h6>Categories: {this.props.post.categories}</h6>
         <p>{this.props.post.content}</p>
