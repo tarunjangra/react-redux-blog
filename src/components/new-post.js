@@ -41,7 +41,7 @@ class NewPost extends Component {
         const fieldHelper = this.props.fields[field]
 
         return (
-            <div className={`form-group ${fieldHelper.touched && fieldHelper.invalid?'has-danger':''}`}>
+            <div className={`form-group ${fieldHelper.touched && fieldHelper.invalid?'has-danger':''}`} key={field}>
         <label>{fieldConfig.label}</label>
         <fieldConfig.type type="text" className="form-control" {...fieldHelper} />
             <div className="text-help">
