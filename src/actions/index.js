@@ -6,7 +6,7 @@ export const FETCH_POST = 'FETCH_POST';
 export const DELETE_POST = 'DELETE_POST';
 export const FETCH_PHOTOS = 'FETCH_PHOTOS';
 
-const ROOT_URL='http://reduxblog.herokuapp.com/api';
+const ROOT_URL='https://reduxblog.herokuapp.com/api';
 const API_KEY='?key=izapapikeyvlalue';
 
 export function fetchPosts() {
