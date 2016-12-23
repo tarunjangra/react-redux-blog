@@ -29,7 +29,7 @@ class PostShow extends Component {
         <hr />
         <h6>Categories: {this.props.post.categories}</h6>
         <p>{this.props.post.content}</p>
-        <button className="btn btn-danger pull-xs-right" onClick={this.onDeleteHandler.bind(this)}>Delete</button>
+        <button className="btn btn-danger" onClick={this.onDeleteHandler.bind(this)}>Delete</button>
         </div>;
     }
 }

@@ -21,6 +21,10 @@ class List extends Component {
   }
 
   render() {
+    const {posts} = this.props;
+    if(!posts){
+      return (<div>Loading...</div>);
+    }
     return <div>
     <h4>Posts:</h4>
     <hr />
