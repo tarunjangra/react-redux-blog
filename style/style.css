@@ -38,3 +38,7 @@ li {
     opacity:0;
     transition: .5s ease-out all;
 }
+
+#map {
+    height: 100%
+}
