@@ -25,7 +25,8 @@ class PhotoShow extends Component {
             return <div>Loading...</div>;
         }
         return <div>
-        <Link to="/">Back to index</Link>
+        <h4>{this.props.post.title}</h4>
+        <hr />
         <h3>{this.props.post.title}</h3>
         <h6>Categories: {this.props.post.categories}</h6>
         <p>{this.props.post.content}</p>

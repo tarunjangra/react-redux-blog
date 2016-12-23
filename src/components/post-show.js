@@ -25,8 +25,8 @@ class PostShow extends Component {
             return <div>Loading...</div>;
         }
         return <div>
-        <Link className="btn btn-primary pull-xs-right" to="/">Back to index</Link>
-        <h3>{this.props.post.title}</h3>
+        <h4>{this.props.post.title}</h4>
+        <hr />
         <h6>Categories: {this.props.post.categories}</h6>
         <p>{this.props.post.content}</p>
         <button className="btn btn-danger pull-xs-right" onClick={this.onDeleteHandler.bind(this)}>Delete</button>

@@ -33,10 +33,11 @@ export default class ToDo extends Component {
         }
         return (
             <div>
-            <h3>Todo List Applicatio:</h3>
-            <button className="btn btn-default btn-warning" onClick={this.onAddList.bind(this)}>Add List</button>
+            <h4>Todo List Application:</h4>
             <hr />
+            <button className="btn btn-default btn-warning" onClick={this.onAddList.bind(this)}>Add List</button>
             <ul className="list-group">
+            <hr />
             <ReactCSSTrasitionGroup {...transitionOptions}>
             {this.renderList()}
             </ReactCSSTrasitionGroup>

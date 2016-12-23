@@ -56,12 +56,14 @@ class NewPost extends Component {
         //const handleSubmit = this.props.handleSubmit;
         // const fields.title = this.props.fields.title
 
-        return <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <h3>Create new post</h3>
+        return (<div>
+        <h4>Create new post</h4>
+        <hr />
+        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
         { _.map(FIELDS, this.renderFields.bind(this))}
         <button type="submit" name="submit" className="btn btn-primary">Submit</button>
         <Link to="/" className="btn btn-danger">Cancel</Link>
-        </form>
+        </form></div>);
     }
 }
 

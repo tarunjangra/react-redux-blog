@@ -15,10 +15,7 @@ export default class GoogleMap extends Component {
     }
     render(){
         return (
-            <div>
-            <h3>Show google map!</h3>
-            <div id="map" ref="map" />
-            </div>);
+            <div id="map" ref="map" />);
     }
 }
 
